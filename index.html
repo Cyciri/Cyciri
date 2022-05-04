@@ -1,7 +1,393 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travel & Food</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" href="glightbox/dist/css/glightbox.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MuseoModerno">
+	<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<!-- START NAVIGATION -->
+	<nav class="navbar navbar-expand-md navbar-light fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="img/Profile.jpeg" alt="Profile picture of the website's author, Cyciri, wearing a hat and sunglasses"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Welcome</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pho">Pho</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#kottu">Kottu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#tajine">Tajine</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+				<form>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+						<label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!-- END NAVIGATION -->
+
+	<!-- START SCROLLING CONTAINER -->
+	<div class="containerScroll" data-bs-spy="scroll" data-bs-target="#navbarNav">
+
+		<!-- START PAGES -->
+
+		<!-- START PAGE 1 (LANDING PAGE)-->
+		<div class="pageFullScreen" id="home">
+			<header>
+				<div class="container-fluid page-title">
+					<div class="row">
+						<div class="col-12">
+							<h1>Travel and Eat</h1>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<!-- END PAGE 1 (LANDING PAGE)-->
+
+		<!-- PAGE SEPARATION -->
+		<div class="bg-light separetion-1" aria-hidden="true">
+			<div class="line mx-auto"></div>
+		</div>
+	    <!-- PAGE SEPARATION -->
+
+		<!-- START PAGE 2 -->
+		<div class="pageFullScreen" id="about">
+			<section>
+				<div class="container-fluid page-title">
+					<div class="row">
+						<div class="col-12">
+							<h2>Take a little trip!</h2>
+							<p>Watch photographs of various places and discover traditional dishes.<br>Enjoy,<br>Cyciri</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- END PAGE 2 -->
+
+		<!-- PAGE SEPARATION -->
+		<div class="bg-light separetion-2" aria-hidden="true">
+			<div class="line mx-auto"></div>
+		</div>
+	    <!-- PAGE SEPARATION -->
+
+		<!-- START PAGE 3 -->
+		<div class="page" id="pho">
+			<article>
+				<div class="container-fluid page-title">
+					<div class="row">
+						<div class="col-12">
+							<h2>Vietnam</h2>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid page-content">
+					<div class="row">
+						<div class="col-12 col-sm-10 offset-sm-1">
+							<section class= "food widget">
+								<div class="clearfix">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Pho-Beef-Noodles-2008.jpg" class="col-2 float-end mb-2 ms-2" alt="Pho dish">
+									<h3>Pho</h3>
+									<p>Phở or pho is a Vietnamese soup dish consisting of broth, rice noodles, herbs, and meat (usually beef) (phở bò). Pho is considered Vietnam's national dish. {{Wikipedia}}</p>
+									<a href="https://en.wikipedia.org/wiki/Pho" target="_blank" role="button" class="btn btn-dark btn-pho">Learn more about pho on Wikipedia <i class="fab fa-wikipedia-w fa-lg"></i></a>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-10 offset-sm-1 col-lg-5">
+							<section class="photo widget">
+								<div id="carouselVietname" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#carouselVietname" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+										<button type="button" data-bs-target="#carouselVietname" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										<button type="button" data-bs-target="#carouselVietname" data-bs-slide-to="2" aria-label="Slide 3"></button>
+										<button type="button" data-bs-target="#carouselVietname" data-bs-slide-to="3" aria-label="Slide 4"></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<a href="img/Vietnam/v1.jpeg" class="glightbox" data-gallery="gallery1">
+												<img src="img/Vietnam/v1.jpeg" class="aspect-ratio" alt="Vietnamese young lady standing behind her street-food trolley, on the street">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/Vietnam/v2.jpeg" class="glightbox" data-gallery="gallery1">
+												<img src="img/Vietnam/v2.jpeg" class="aspect-ratio" alt="Vietnamese old lady cooking food, in an indoor market">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/Vietnam/v3.jpeg" class="glightbox" data-gallery="gallery1">
+												<img src="img/Vietnam/v3.jpeg" class="aspect-ratio" alt="Vietnamese dampling in a steamer, outdoor">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/Vietnam/v4.jpeg" class="glightbox" data-gallery="gallery1">
+												<img src="img/Vietnam/v4.jpeg" class="aspect-ratio" alt="Landscape of sea and hills, at Halong bay">
+											</a>
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselVietname" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselVietname" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</section>
+						</div>
+						<div class="col-12 col-sm-10 offset-sm-1 col-lg-5 offset-lg-0">
+							<section class="map widget">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7864452.3833377445!2d101.4132682470241!3d15.747719357779795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31157a4d736a1e5f%3A0xb03bb0c9e2fe62be!2sVietnam!5e0!3m2!1sen!2sde!4v1639155592618!5m2!1sen!2sde" loading="lazy" class="aspect-ratio" aria-label="Google Map, Vietnam"></iframe>
+							</section>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<!-- END PAGE 3 -->
+
+		<!-- PAGE SEPARATION -->
+		<div class="bg-light separetion-3" aria-hidden="true">
+			<div class="line mx-auto"></div>
+		</div>
+	    <!-- PAGE SEPARATION -->
+
+		<!-- START PAGE 4 -->
+		<div class="page" id="kottu">
+			<article>
+				<div class="container-fluid page-title">
+					<div class="row">
+						<div class="col-12">
+							<h2>Sri Lanka</h2>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid page-content">
+					<div class="row">
+						<div class="col-12 col-sm-10 offset-sm-1">
+							<section class= "food widget">
+								<div class="clearfix">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Kotthu.jpg" class="col-2 float-end mb-2 ms-2" alt="Kottu dish">
+									<h3>Kottu</h3>
+									<p>Kottu is a Sri Lankan dish consisting of diced roti stir-fried with scrambled egg, onions, chillies, spices, and optional vegetables or meat, such as mutton or chicken. {{Wikipedia}}</p>
+									<a href="https://en.wikipedia.org/wiki/Kottu" target="_blank" role="button" class="btn btn-dark btn-kottu">Learn more about kottu on Wikipedia <i class="fab fa-wikipedia-w fa-lg"></i></a>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-10 offset-sm-1 col-lg-5">
+							<section class="photo widget">
+								<div id="carouselSriLanka" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#carouselSriLanka" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+										<button type="button" data-bs-target="#carouselSriLanka" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										<button type="button" data-bs-target="#carouselSriLanka" data-bs-slide-to="2" aria-label="Slide 3"></button>
+										<button type="button" data-bs-target="#carouselSriLanka" data-bs-slide-to="3" aria-label="Slide 4"></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<a href="img/SriLanka/s1.jpeg" class="glightbox" data-gallery="gallery2">
+												<img src="img/SriLanka/s1.jpeg" class="aspect-ratio" alt="Landscape of montains ans lakes, in Sri Lanka">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/SriLanka/s2.jpeg" class="glightbox" data-gallery="gallery2">
+												<img src="img/SriLanka/s2.jpeg" class="aspect-ratio" alt="A low wall with street-art representing human eyes, and with a landscape of hills and forest in the background, in Sri Lanka">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/SriLanka/s3.jpeg" class="glightbox" data-gallery="gallery2">
+												<img src="img/SriLanka/s3.jpeg" class="aspect-ratio" alt="Landscape of tea fields, in Sri Lanka">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/SriLanka/s4.jpeg" class="glightbox" data-gallery="gallery2">
+												<img src="img/SriLanka/s4.jpeg" class="aspect-ratio" alt="Landscape of a beach with turquoise sea water, in Sri Lanka">
+											</a>
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselSriLanka" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselSriLanka" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</section>
+						</div>
+						<div class="col-12 col-sm-10 offset-sm-1 col-lg-5 offset-lg-0">
+							<section class="map widget">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047271.2999762455!2d78.46169489521603!3d7.851731513542368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2sde!4v1639235492165!5m2!1sen!2sde" loading="lazy" class="aspect-ratio" aria-label="Google Map, Sri Lanka"></iframe>
+							</section>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<!-- END PAGE 4 -->
+
+		<!-- PAGE SEPARATION -->
+		<div class="bg-light separetion-4" aria-hidden="true">
+			<div class="line mx-auto"></div>
+		</div>
+	    <!-- PAGE SEPARATION -->
+
+		<!-- START PAGE 5 -->
+		<div class="page" id="tajine">
+			<article>
+				<div class="container-fluid page-title">
+					<div class="row">
+						<div class="col-12">
+							<h2>Morocco</h2>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid page-content">
+					<div class="row">
+						<div class="col-12 col-sm-10 offset-sm-1">
+							<section class= "food widget">
+								<div class="clearfix">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/%D8%B7%D8%A7%D8%AC%D9%86_%D8%A8%D9%8A%D8%B6_%D9%88%D9%85%D8%B7%D9%8A%D8%B4_%D9%88%D9%83%D8%B1%D8%A7%D8%AA_%D8%AF_%D8%A7%D9%84%D9%84%D8%AD%D9%85.jpg" class="col-2 float-end mb-2 ms-2" alt="Tajine dish">
+									<h3>Tajine</h3>
+									<p>A tajine is a North African dish, named after the earthenware pot in which it is cooked. It is also called maraq or marqa. {{Wikipedia}}</p>
+									<a href="https://en.wikipedia.org/wiki/Tajine" target="_blank" role="button" class="btn btn-dark btn-tagine">Learn more about tajine on Wikipedia <i class="fab fa-wikipedia-w fa-lg"></i></a>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-10 offset-sm-1 col-lg-5">
+							<section class="photo widget">
+								<div id="carouselMorocco" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#carouselMorocco" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+										<button type="button" data-bs-target="#carouselMorocco" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										<button type="button" data-bs-target="#carouselMorocco" data-bs-slide-to="2" aria-label="Slide 3"></button>
+										<button type="button" data-bs-target="#carouselMorocco" data-bs-slide-to="3" aria-label="Slide 4"></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<a href="img/Morocco/m1.jpeg" class="glightbox" data-gallery="gallery3">
+												<img src="img/Morocco/m1.jpeg" class="aspect-ratio" alt="Urban landscape of roof-tops in a town, in Morocco">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/Morocco/m2.jpeg" class="glightbox" data-gallery="gallery3">
+												<img src="img/Morocco/m2.jpeg" class="aspect-ratio" alt="Blue fontain in a garden, in Morocco">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/Morocco/m3.jpeg" class="glightbox" data-gallery="gallery3">
+												<img src="img/Morocco/m3.jpeg" class="aspect-ratio" alt="Spices inside a store, in Morocco">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a href="img/Morocco/m4.jpeg" class="glightbox" data-gallery="gallery3">
+												<img src="img/Morocco/m4.jpeg" class="aspect-ratio" alt="Window from inside a house, in Morocco">
+											</a>
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselMorocco" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselMorocco" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</section>
+						</div>
+						<div class="col-12 col-sm-10 offset-sm-1 col-lg-5 offset-lg-0">
+							<section class="map widget">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13936613.21337639!2d-16.160771587907934!3d31.483117515816783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMorocco!5e0!3m2!1sen!2sde!4v1639238192279!5m2!1sen!2sde" loading="lazy" class="aspect-ratio" aria-label="Google Map, Morocco"></iframe>
+							</section>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<!-- END PAGE 5 -->
+
+		<!-- PAGE SEPARATION -->
+		<div class="bg-light separetion-5" aria-hidden="true">
+			<div class="line mx-auto"></div>
+		</div>
+	    <!-- PAGE SEPARATION -->
+
+		<!-- START PAGE 6 (ACKNOELEDGEMENTS AND CONTACT) -->
+		<div class="pageFullScreen" id="contact">
+			<section>
+				<div class="container-fluid page-title">
+					<div class="row">
+						<div class="col-12">
+							<h2>Thank you for your visite!</h2>
+							<p>I hope you enjoyed it, and you'r getting appetite and curiousity.<br>Take are,<br>Cyciri</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<p>
+								<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+								<a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+								<br>
+								<a href="#">cyciri@blablabla.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- END PAGE 6 (ACKNOELEDGEMENTS AND CONTACT) -->
+		<!-- END PAGES -->
+	</div>
+	<!-- END SCROLLING CONTAINER -->
+
+	<!-- START JavaScript LINKS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="glightbox/dist/js/glightbox.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- END JavaScript LINKS -->
+
+	<!-- START SCRIPT JavaScript -->
+	<script type="text/javascript">
+		const lightbox = GLightbox();
+	</script>
+	<!-- START SCRIPT JavaScript-->
+
 </body>
 </html>
